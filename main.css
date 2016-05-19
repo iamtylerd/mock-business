@@ -1,0 +1,186 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*Nav Styling*/
+
+
+.main-header,
+.nav {
+	display: flex;
+	flex-direction: column;
+}
+
+.main-header {
+	background-color: #CFDAD1;
+}
+
+.site-logo {
+	width: 110px;
+	align-self: center;
+}
+
+.nav {
+	margin-top: .5em;
+	list-style: none;
+}
+
+.nav a {
+	display: block;
+	color: #BDB6A0;
+	font-size: 1.125em;
+	font-weight: 300;
+	text-align: center;
+	padding: .4em;
+	border-bottom: 1px solid #ebecec;
+}
+
+.nav a:hover {
+	color: rgba(189, 182, 160, .5);
+	border-bottom-color: #1E45A7;
+}
+
+/*Hero Image*/
+
+.hero {
+	max-width: 100%;
+	background: linear-gradient(#CFDAD1 10%, rgba(0, 0, 0, 0));
+	margin-bottom: 30px;
+}
+
+.hero img {
+	display: block;
+	width: 90%;
+	max-height: 80vh;
+	margin: auto;
+	padding-top: 10px;
+}
+
+/*Card info*/
+
+.card-info {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+}
+
+.card {
+	margin: 20px 5% 20px 5%;
+	padding: 10px;
+	border: 2px solid black;
+	border-radius: 0px;
+    box-shadow: 0px 17px 10px -10px rgba(0,0,0,0.4);
+}
+
+/*Second Image*/
+
+.wings {
+	max-width: 100%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.wings img {
+	display: block;
+	width: 90%;
+	margin: auto;
+}
+
+/*End Second Image*/
+/*Employee Card*/
+
+.employees {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.employee-text {
+	border: 2px solid black;
+	padding: 10px;
+	list-style-position: inside;
+}
+
+.employee-photo {
+	display: flex;
+	max-width: 100px;
+	margin: 15px auto -12px;
+	box-shadow: 0px 5px 10px -10px rgba(0,0,0,0.4);
+}
+
+/*End Employee Card*/
+/*Footer*/
+
+.footer {
+	width: 100%;
+	background-color: #CFDAD1;
+	margin-top: 40px;
+	padding: 10px 0;
+	color: white;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+/*Media Queries*/
+
+@media (min-width: 769px) {
+	.main-header {
+		justify-content: flex-end;
+	}
+	.site-logo {
+		width: 140px;
+		
+	}
+	.nav {
+		margin-top: 1em;
+		flex-direction: row;
+		justify-content: space-between;
+		padding-left: 1.5em;
+		padding-right: 1.5em;
+	
+	}
+	.nav a {
+		border-bottom-color: transparent;
+	}
+	.card-info {
+		flex-direction: row;
+	}
+	.card:hover {
+	box-shadow: 0px 37px 20px -20px rgba(0,0,0,0.2);
+    transform: translate(0px, -10px) scale(1.1);
+	}
+	.employees {
+		flex-direction: row;
+		justify-content: space-around;
+	}
+}
+
+@media (min-width: 1025px) {
+	.main-header {
+		flex-direction: row;
+	}
+	.site-logo {
+		margin-right: auto;
+		margin-left: 30%;
+	}
+	.nav {
+		margin-top: 0;
+		align-self: center;
+		margin-right: 30%;
+		border-bottom: 1px solid #BDB6A0;
+	}
+	.nav li {
+		margin-left: .65em;
+		margin-right: .65em;
+	}
+}
